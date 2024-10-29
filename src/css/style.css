@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 70vw;
+    background-color: #ffdf9f;
+    padding: 24px;
+    height: 80vh;
+    display: flex;
+    gap: 24px;
+}
+
+aside{
+    border: 1px dashed black;
+    width: 30%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside div:nth-child(1){
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside div:nth-child(1) input{
+    border: 0;
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+
+aside div:nth-child(2){
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+aside div:nth-child(3){
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+aside p{
+    height: 5%;
+}
+
+
+aside #images{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    align-self: flex-end;
+    overflow-y: scroll;
+}
+
+aside #images img{
+    width: 100px;
+    cursor: grab;
+    background-color: white;
+    border: 5px double black;
+    padding: 8px;
+}
+
+
+
+
+
+
+
+section{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section #tShirt {
+    height: 90%;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section #tShirt #imgCamisa {
+    height: 400px;
+}
+
+#titleResult, #imgLittle, #imgBig, #imgName {
+    position: absolute;
+    z-index: 1;
+    font-family: "Oxanium", sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#titleResult {
+    top: 25%;
+    left: 25%;
+}
+
+#imgBig {
+    width: 100px;
+    top: 40%;
+    left: 40%;
+}
+
+#imgLittle {
+    width: 50px;
+    top: 25%;
+    right: 28%;
+    transform: scaleX(-1)
+}
+
+#imgCamisa {
+    position: relative;
+    z-index: 0;
+}
+
+.image{
+    height: 20px;
+}
+
+#imgName{
+    bottom: 17%;
+    right: 28%;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 955px) {
+    main{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 789px) {
+    main{
+        flex-direction: column;
+        width: 100vw;
+        padding: 24px;
+        gap: 8px;
+        height: fit-content;
+    }
+
+
+    aside{
+        width: 100%;
+    }
+
+
+    aside #images{
+        width: 100%;
+        height: 200px;
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+    
+    aside #images img{
+        width: 100px;
+        cursor: grab;
+        background-color: white;
+        border: 5px double black;
+        padding: 8px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,web,lenguajemarca">
+    <meta name="author" content="Pablo">
+    <meta name="generator" content="visualstudio">
+    <meta name="application-name" content="Customizer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script.js" defer></script>
+    <title>Customizer</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" maxlength="10">
+            </div>
+            <div>
+                <input type="range" id="xAxis" min="0" max="5" value="0">
+                <input type="range" id="yAxis" min="0" max="5" value="0">
+            </div>
+            <div>
+                <span>
+                    <input checked type="radio" name="color" id="black">
+                    <label for="black">Black</label>
+                </span>
+                
+                <span>
+                    <input type="radio" name="color" id="white">
+                    <label for="white">White</label>
+                </span>
+            
+            </div>
+
+            <p>Images (drag to t-shirt)</p>
+            <div id="images">
+                <img src="./src/image/CHAMBER.png" alt="CHAMBER">
+                <img src="./src/image/CYPHER.png" alt="CYPHER">
+                <img src="./src/image/GEKKO.png" alt="GEKKO">
+                <img src="./src/image/JETT.png" alt="JETT">
+                <img src="./src/image/KILLJOY.png" alt="KILLJOY">
+                <img src="./src/image/PHOENIX.png" alt="PHOENIX">
+                <img src="./src/image/RAZE.png" alt="RAZE">
+                <img src="./src/image/REYNA.png" alt="REYNA">
+                <img src="./src/image/SAGE.png" alt="SAGE">
+                <img src="./src/image/SKYE.png" alt="SKYE">
+                <img src="./src/image/SOVA.png" alt="SOVA">
+                <img src="./src/image/VIPER.png" alt="VIPER">
+            </div>
+        </aside>
+
+
+        <section>
+            <div id="tShirt">
+                <span id="titleResult"></span>
+
+                <div class="image"><img class="hidden" id="imgLittle" src="" alt="camiseta"></div>
+                <img class="hidden" id="imgBig" src="" alt="camiseta">
+                <img id="imgCamisa" src="./src/image/camiseta_negra.png" alt="camiseta">
+
+                <span id="imgName"></span>
+            </div>
+            <h1>Custom your T-shirt</h1>
+        </section>
+    </main>
+</body>
+</html>
